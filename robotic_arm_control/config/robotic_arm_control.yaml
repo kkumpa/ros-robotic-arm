@@ -1,0 +1,11 @@
+robotic_arm:
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  forearm_position_controller:
+    type: position_controllers/JointTrajectoryController
+    joints:
+      - base_forearm_joint
+      - forearm_0_1_joint
+      - forearm_1_2_joint

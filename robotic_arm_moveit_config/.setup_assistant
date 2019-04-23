@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: robotic_arm_description
+    relative_path: urdf/robotic_arm_simulator.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/robotic_arm.srdf
+  CONFIG:
+    author_name: Kristyna Kumpanova
+    author_email: Kristyna.Kumpanova@akka.eu
+    generated_timestamp: 1556010725

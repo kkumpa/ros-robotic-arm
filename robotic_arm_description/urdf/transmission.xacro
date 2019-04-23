@@ -1,0 +1,38 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<robot name="robotic_arm" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+    <!-- FOREARM -->
+    <transmission name="trans_base_forearm_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="base_forearm_joint">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="base_forearm_joint_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <transmission name="trans_forearm_0_1_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="forearm_0_1_joint">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="forearm_0_1_joint_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+    <transmission name="trans_forearm_gripper_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="forearm_gripper_joint">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="forearm_gripper_joint_motor">
+            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
+</robot>

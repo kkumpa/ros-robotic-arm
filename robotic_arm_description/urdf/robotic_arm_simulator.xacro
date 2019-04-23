@@ -1,0 +1,11 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<robot name="robotic_arm" 
+       xmlns:xacro="http://www.ros.org/wiki/xacro"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+    <xacro:include filename="$(find robotic_arm_description)/urdf/base.xacro" />
+    <xacro:include filename="$(find robotic_arm_description)/urdf/forearm.xacro" />
+    <xacro:include filename="$(find robotic_arm_description)/urdf/gripper.xacro" />
+    <xacro:include filename="$(find robotic_arm_description)/urdf/gazebo.xacro" />
+    <xacro:include filename="$(find robotic_arm_description)/urdf/transmission.xacro" />
+
+</robot>

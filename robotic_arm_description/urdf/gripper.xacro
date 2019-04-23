@@ -1,0 +1,32 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<robot name="robotic_arm" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+  <link name="gripper_link">
+    <inertial>
+      <origin rpy=" 1.57432 0 0" xyz="0 0 0 " />
+      <mass value="0.00277573" />
+      <inertia ixx="9.31023e-06" ixy="0" ixz="0" iyy="9.31023e-06" iyz="0" izz="5.77898e-06" />
+    </inertial>
+
+    <visual name="visual">
+      <origin rpy=" 1.57432 0 0" xyz="0 0 0 " />
+      <geometry>
+        <cylinder length="0.166607" radius="0.0645285" />
+      </geometry>
+    </visual>
+
+    <collision name="collision">
+      <origin rpy=" 1.57432 0 0" xyz="0 0 0 " />
+      <geometry>
+        <cylinder length="0.166607" radius="0.064529" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="forearm_gripper_joint" type="fixed">
+    <parent link="forearm_2_link" />
+    <child link="gripper_link" />
+    <origin rpy=" 0 0 0" xyz="0 0 0.42 " />
+  </joint>
+
+</robot>

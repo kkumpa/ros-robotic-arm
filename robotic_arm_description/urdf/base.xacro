@@ -1,0 +1,31 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<robot name="robotic_arm" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+  <link name="world" />
+
+  <link name="base_link">
+        
+    <inertial>
+      <mass value="0.00244239" />
+      <inertia ixx="1.719e-05" ixy="0" ixz="0" iyy="1.719e-05" iyz="0" izz="3.419e-05" />
+    </inertial>
+
+    <visual name="visual">
+      <geometry>
+        <cylinder length="0.02" radius="0.17" />
+      </geometry>
+    </visual>
+    
+    <collision name="collision">
+      <geometry>
+        <cylinder length="0.02" radius="0.17" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="world_base_joint" type="fixed">
+    <child link="base_link" />
+    <parent link="world" />
+  </joint>
+
+</robot>

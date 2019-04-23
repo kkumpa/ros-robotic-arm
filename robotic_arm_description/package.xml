@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>robotic_arm_description</name>
+  <version>0.0.0</version>
+  <description>
+      The robotic arm model description.
+  </description>
+  <maintainer email="Kristyna.Kumpanova@akka.eu">Kristyna Kumpanova</maintainer>
+  <license></license>
+ 
+  <buildtool_depend>catkin</buildtool_depend>
+ 
+  <build_depend>gazebo_ros</build_depend>
+  <build_depend>roslaunch</build_depend>
+  <build_depend>rostest</build_depend>
+ 
+  <run_depend>gazebo_ros</run_depend>
+  <run_depend>joint_state_publisher</run_depend>
+  <run_depend>robot_state_publisher</run_depend>
+ 
+  <export>
+      gazebo_model_path="${prefix}/urdf"
+      <gazebo_ros 
+          plugin_path="${prefix}/devel/lib" 
+          ld_library_path="${prefix}/devel/lib"/>
+  </export>
+ 
+</package>
