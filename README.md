@@ -11,14 +11,10 @@ To use this package you need to instal
 
 ## Robotic arm description
 
-This package contains a simple robotic arm consisting of just 2 movable joints. So basically the robot has only a forearm 
-right now and the 'end effector' is now the elbow. Once I am able to control this simplistic robotic arm, I will add the 
-next link and see if I understand the MoveIt! enough, that I am able to make it work with the two arm robot.
-
-![simple robotic arm](doc/img/robotic_arm_axis.png)
-robotic arm right now
+This package contains a simple robotic arm consisting of two arms and a end effector link as can be seen on the scheme bellow. 
 
 ![future robotic arm](doc/img/future_arm.png)
+
 schema of the final robotic arm
 
 ## Current State

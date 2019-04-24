@@ -23,8 +23,8 @@
     </collision>
   </link>
 
-  <joint name="forearm_gripper_joint" type="fixed">
-    <parent link="forearm_2_link" />
+  <joint name="arm_gripper_joint" type="fixed">
+    <parent link="arm_2_link" />
     <child link="gripper_link" />
     <origin rpy=" 0 0 0" xyz="0 0 0.42 " />
   </joint>

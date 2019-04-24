@@ -5,6 +5,6 @@
   <arg name="moveit_controller_manager" default="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
   <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
 
-  <!-- loads ontrollers to the param server -->
+  <!-- loads ros_controllers to the param server -->
   <rosparam file="$(find robotic_arm_moveit_config)/config/controllers.yaml"/>
 </launch>

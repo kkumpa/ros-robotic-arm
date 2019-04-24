@@ -11,6 +11,8 @@ hardware_interface:
   joints:
     - base_forearm_joint
     - forearm_0_1_joint
+    - forearm_arm_joint
+    - arm_0_1_joint
   sim_control_mode: 1  # 0: position, 1: velocity
 # Publish all joint states
 # Creates the /joint_states topic necessary in ROS
@@ -31,6 +33,22 @@ forearm_position_controller:
       i: 1
       i_clamp: 1
     forearm_0_1_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+arm_position_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - forearm_arm_joint
+    - arm_0_1_joint
+  gains:
+    forearm_arm_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    arm_0_1_joint:
       p: 100
       d: 1
       i: 1

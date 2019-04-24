@@ -146,8 +146,36 @@ forearm:
     - LazyPRMstar
     - SPARS
     - SPARStwo
+arm:
+  default_planner_config: None
+  planner_configs:
+    - SBL
+    - EST
+    - LBKPIECE
+    - BKPIECE
+    - KPIECE
+    - RRT
+    - RRTConnect
+    - RRTstar
+    - TRRT
+    - PRM
+    - PRMstar
+    - FMT
+    - BFMT
+    - PDST
+    - STRIDE
+    - BiTRRT
+    - LBTRRT
+    - BiEST
+    - ProjEST
+    - LazyPRM
+    - LazyPRMstar
+    - SPARS
+    - SPARStwo
+  projection_evaluator: joints(forearm_arm_joint,arm_0_1_joint)
+  longest_valid_segment_fraction: 0.005
 end_effector:
-  default_planner_config: ""
+  default_planner_config: None
   planner_configs:
     - SBL
     - EST

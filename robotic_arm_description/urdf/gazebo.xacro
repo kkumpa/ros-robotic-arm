@@ -8,10 +8,6 @@
         </plugin>
     </gazebo>
 
-    <gazebo reference="forearm_1_2_joint">
-        <disableFixedJointLumping>true</disableFixedJointLumping>
-    </gazebo>
-
     <gazebo reference="base_link">
         <static>true</static>
     </gazebo>
@@ -20,7 +16,15 @@
         <disableFixedJointLumping>true</disableFixedJointLumping>
     </gazebo>
 
-    <gazebo reference="forearm_gripper_joint">
+    <gazebo reference="forearm_1_2_joint">
+        <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
+
+    <gazebo reference="arm_1_2_joint">
+        <disableFixedJointLumping>true</disableFixedJointLumping>
+    </gazebo>
+
+    <gazebo reference="arm_gripper_joint">
         <disableFixedJointLumping>true</disableFixedJointLumping>
     </gazebo>
 

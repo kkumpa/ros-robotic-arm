@@ -6,3 +6,10 @@ controller_list:
     joints: 
       - base_forearm_joint
       - forearm_0_1_joint
+  - name: arm_position_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints: 
+      - forearm_arm_joint
+      - arm_0_1_joint

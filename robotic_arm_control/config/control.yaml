@@ -1,10 +1,10 @@
 joint_state_controller:
   type: joint_state_controller/JointStateController
-  publish_rate: 50
+  publish_rate: 50  
 
 forearm_position_controller:
   type: effort_controllers/JointTrajectoryController
-  joints:
+  joints: 
     - base_forearm_joint
     - forearm_0_1_joint
 

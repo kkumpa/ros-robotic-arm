@@ -13,7 +13,7 @@
   </include>
 
   <!-- Generate/Load robot description file -->
-  <include file="$(find robotic_arm_control)/launch/control.launch"/>
+  <include file="$(find robotic_arm_control)/launch/robotic_arm_control.launch"/>
 
   <!-- The visualization component of MoveIt! -->
   <include file="$(find robotic_arm_moveit_config)/launch/moveit_rviz.launch"/>
