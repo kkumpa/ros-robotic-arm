@@ -20,7 +20,7 @@ joint_state_controller:
 controller_list:
   []
 forearm_position_controller:
-  type: position_controllers/JointTrajectoryController
+  type: effort_controllers/JointTrajectoryController
   joints:
     - base_forearm_joint
     - forearm_0_1_joint

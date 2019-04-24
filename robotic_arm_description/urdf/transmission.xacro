@@ -5,10 +5,10 @@
     <transmission name="trans_base_forearm_joint">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="base_forearm_joint">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
         <actuator name="base_forearm_joint_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>
@@ -16,21 +16,10 @@
     <transmission name="trans_forearm_0_1_joint">
         <type>transmission_interface/SimpleTransmission</type>
         <joint name="forearm_0_1_joint">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
         </joint>
         <actuator name="forearm_0_1_joint_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-            <mechanicalReduction>1</mechanicalReduction>
-        </actuator>
-    </transmission>
-
-    <transmission name="trans_forearm_gripper_joint">
-        <type>transmission_interface/SimpleTransmission</type>
-        <joint name="forearm_gripper_joint">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
-        </joint>
-        <actuator name="forearm_gripper_joint_motor">
-            <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
             <mechanicalReduction>1</mechanicalReduction>
         </actuator>
     </transmission>

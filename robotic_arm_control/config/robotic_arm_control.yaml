@@ -4,8 +4,11 @@ robotic_arm:
     publish_rate: 50
 
   forearm_position_controller:
-    type: position_controllers/JointTrajectoryController
+    type: effort_controllers/JointTrajectoryController
     joints:
       - base_forearm_joint
       - forearm_0_1_joint
-      - forearm_1_2_joint
+
+    gains:
+      base_forearm_joint: {p: 10, i: 1, d: 0.001}
+      forearm_0_1_joint: {p: 10,  i: 1, d: 0.001}
