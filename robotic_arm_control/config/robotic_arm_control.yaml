@@ -10,7 +10,7 @@ forearm_position_controller:
 
   gains:
     base_forearm_joint: {p: 10, i: 1, d: 0.001}
-    forearm_0_1_joint: {p: 10,  i: 1, d: 0.001}
+    forearm_0_1_joint: {p: 10,  i: 1, d: 0.1}
 
 arm_position_controller:
   type: effort_controllers/JointTrajectoryController
