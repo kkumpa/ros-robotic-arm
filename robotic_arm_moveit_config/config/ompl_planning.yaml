@@ -146,10 +146,8 @@ forearm:
     - LazyPRMstar
     - SPARS
     - SPARStwo
-  projection_evaluator: joints(base_forearm_joint,forearm_0_1_joint)
-  longest_valid_segment_fraction: 0.005
 end_effector:
-  default_planner_config: None
+  default_planner_config: ""
   planner_configs:
     - SBL
     - EST

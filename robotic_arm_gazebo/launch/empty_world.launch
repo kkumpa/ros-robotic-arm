@@ -2,7 +2,7 @@
 <launch>
     
     <!-- define arguments -->
-    <arg name="paused" default="true"/>
+    <arg name="paused" default="false"/>
     <arg name="use_sim_time" default="true"/>
     <arg name="gui" default="true"/>
     <arg name="debug" default="false" />
@@ -29,10 +29,10 @@
     <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
     <node name="urdf_spawner_robotic_arm" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
         args="-urdf -model robotic_arm -param robot_description -x  $(arg robot_x) -y $(arg robot_y) -z $(arg robot_z) -R -0.0 -P -0.0 -Y -0.0"/>
-
+<!--
     <include file="$(find robotic_arm_control)/launch/robotic_arm_control.launch" >
     </include>
-
+-->
     <node pkg="tf" type="static_transform_publisher" name="world_broadcaster" args = "0 0 0 0 0 0 world base_link 10" />
     <node pkg="tf" type="static_transform_publisher" name="map_broadcaster" args = "0 0 0 0 0 0 world map 10" />
 

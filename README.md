@@ -1,6 +1,6 @@
 # ros-robotic-arm
 
-This package is meant to help me understand how to use [MoveIt!](https://moveit.ros.org/) to control a robotic arm inside Gazebo. See the [respective gazebo answers question](http://answers.gazebosim.org/question/22353/how-to-connect-the-moveit-planning-with-gazebo-simulation/) for more details.
+This package is meant to help me understand how to use [MoveIt!](https://moveit.ros.org/) to control a robotic arm inside Gazebo. 
 
 ## Prerequsities
 
@@ -32,4 +32,4 @@ You can run rviz and see planned trajectories between different positions of the
 
 and adding the MotionPlanning display to the rviz inside the GUI.
 
-However the planned trajectories can not be executed and it is unclear whether the Gazebo has any connection with the rviz.
+You can set the starting and end positions and then click the 'plan and execute button' and the robotic arm will move to the end position both in Rviz and in the Gazebo.

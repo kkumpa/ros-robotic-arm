@@ -1,10 +1,8 @@
-  controller_manager_ns: ''
-  controller_list:
-    - name: robotic_arm/forearm_position_controller
-      action_ns: follow_joint_trajectory
-      type: FollowJointTrajectory
-      default: true
-      joints:
-        - base_forearm_joint
-        - forearm_0_1_joint
-        - forearm_1_2_joint
+controller_list:
+  - name: forearm_position_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints: 
+      - base_forearm_joint
+      - forearm_0_1_joint
