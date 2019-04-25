@@ -6,7 +6,7 @@
   <rosparam command="load" file="$(find robotic_arm_moveit_config)/config/sensors_3d.yaml" />
 
   <!-- Params for the octomap monitor -->
-  <param name="octomap_frame" type="string" value="map" /> -->
+  <!--  <param name="octomap_frame" type="string" value="some frame in which the robot moves" /> -->
   <param name="octomap_resolution" type="double" value="0.025" />
   <param name="max_range" type="double" value="5.0" />
 

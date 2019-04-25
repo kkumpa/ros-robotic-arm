@@ -1,12 +1,7 @@
 controller_list:
-  - name: fake_forearm_controller
+  - name: fake_arm_controller
     joints:
       - base_forearm_joint
       - forearm_0_1_joint
-  - name: fake_arm_controller
-    joints:
       - forearm_arm_joint
       - arm_0_1_joint
-  - name: fake_end_effector_controller
-    joints:
-      []

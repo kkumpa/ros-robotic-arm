@@ -74,7 +74,7 @@
     <child link="forearm_1_link" />
     <origin rpy=" 0 0 0" xyz="0 0 0.09 " />
     <axis xyz="0 1 0" />
-    <limit effort="100000" lower="-2.3" upper="2.3" velocity="100" />
+    <limit effort="1000000" lower="-1.8" upper="1.8" velocity="100" />
   </joint>
 
   <joint name="forearm_1_2_joint" type="fixed">

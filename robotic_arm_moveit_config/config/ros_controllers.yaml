@@ -21,11 +21,13 @@ joint_state_controller:
   publish_rate: 50
 controller_list:
   []
-forearm_position_controller:
+arm_position_controller:
   type: effort_controllers/JointTrajectoryController
   joints:
     - base_forearm_joint
     - forearm_0_1_joint
+    - forearm_arm_joint
+    - arm_0_1_joint
   gains:
     base_forearm_joint:
       p: 100
@@ -37,12 +39,6 @@ forearm_position_controller:
       d: 1
       i: 1
       i_clamp: 1
-arm_position_controller:
-  type: effort_controllers/JointTrajectoryController
-  joints:
-    - forearm_arm_joint
-    - arm_0_1_joint
-  gains:
     forearm_arm_joint:
       p: 100
       d: 1

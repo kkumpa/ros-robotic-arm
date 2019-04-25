@@ -11,11 +11,9 @@ To use this package you need to instal
 
 ## Robotic arm description
 
-This package contains a simple robotic arm consisting of two arms and a end effector link as can be seen on the scheme bellow. 
+This package contains a simple robotic arm consisting of two arms and a end effector link as can be seen on the picture bellow. 
 
-![future robotic arm](doc/img/future_arm.png)
-
-schema of the final robotic arm
+![future robotic arm](doc/img/arm.png)
 
 ## Current State
 You can start the robotic arm in Gazebo using command.

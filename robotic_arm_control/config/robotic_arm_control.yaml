@@ -2,22 +2,16 @@ joint_state_controller:
   type: joint_state_controller/JointStateController
   publish_rate: 50
 
-forearm_position_controller:
+arm_position_controller:
   type: effort_controllers/JointTrajectoryController
   joints:
     - base_forearm_joint
     - forearm_0_1_joint
-
-  gains:
-    base_forearm_joint: {p: 10, i: 1, d: 0.001}
-    forearm_0_1_joint: {p: 10,  i: 1, d: 0.1}
-
-arm_position_controller:
-  type: effort_controllers/JointTrajectoryController
-  joints:
     - forearm_arm_joint
     - arm_0_1_joint
 
   gains:
+    base_forearm_joint: {p: 10, i: 1, d: 0.001}
+    forearm_0_1_joint: {p: 10,  i: 1, d: 0.1}
     forearm_arm_joint: {p: 10, i: 1, d: 0.001}
     arm_0_1_joint: {p: 10,  i: 1, d: 0.001}
