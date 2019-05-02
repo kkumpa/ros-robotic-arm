@@ -1,0 +1,1 @@
+rosrun moveit_kinematics create_ikfast_moveit_plugin.py robotic_arm arm robotic_arm_ikfast_arm_plugin /home/linux/catkin_ws/src/robotic_arm_ikfast_arm_plugin/src/robotic_arm_arm_ikfast_solver.cpp
