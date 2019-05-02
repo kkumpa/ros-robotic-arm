@@ -47,4 +47,16 @@
         </actuator>
     </transmission>
 
+    <!-- GRIPPER -->
+    <transmission name="trans_arm_gripper_joint">
+        <type>transmission_interface/SimpleTransmission</type>
+        <joint name="arm_gripper_joint">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+        </joint>
+        <actuator name="arm_gripper_joint_motor">
+            <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            <mechanicalReduction>1</mechanicalReduction>
+        </actuator>
+    </transmission>
+
 </robot>

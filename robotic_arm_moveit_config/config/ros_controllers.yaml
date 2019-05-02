@@ -28,6 +28,7 @@ arm_position_controller:
     - forearm_0_1_joint
     - forearm_arm_joint
     - arm_0_1_joint
+    - arm_gripper_joint
   gains:
     base_forearm_joint:
       p: 100
@@ -45,6 +46,11 @@ arm_position_controller:
       i: 1
       i_clamp: 1
     arm_0_1_joint:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    arm_gripper_joint:
       p: 100
       d: 1
       i: 1

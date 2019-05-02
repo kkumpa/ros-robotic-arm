@@ -24,8 +24,4 @@
         <disableFixedJointLumping>true</disableFixedJointLumping>
     </gazebo>
 
-    <gazebo reference="arm_gripper_joint">
-        <disableFixedJointLumping>true</disableFixedJointLumping>
-    </gazebo>
-
 </robot>

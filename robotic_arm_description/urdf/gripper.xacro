@@ -23,10 +23,12 @@
     </collision>
   </link>
 
-  <joint name="arm_gripper_joint" type="fixed">
+  <joint name="arm_gripper_joint" type="revolute">
     <parent link="arm_2_link" />
     <child link="gripper_link" />
     <origin rpy=" 0 0 0" xyz="0 0 0.42 " />
+    <axis xyz="0 0 1" />
+    <limit effort="100000" lower="-3e+150" upper="3e+150" velocity="100" />
   </joint>
 
 </robot>

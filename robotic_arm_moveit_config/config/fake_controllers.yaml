@@ -5,3 +5,4 @@ controller_list:
       - forearm_0_1_joint
       - forearm_arm_joint
       - arm_0_1_joint
+      - arm_gripper_joint

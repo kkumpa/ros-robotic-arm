@@ -9,9 +9,30 @@ arm_position_controller:
     - forearm_0_1_joint
     - forearm_arm_joint
     - arm_0_1_joint
+    - arm_gripper_joint
+
+  constraints:
+    goal_time: 0.5                   # Override default
+    stopped_velocity_tolerance: 0.02 # Override default
+    base_forearm_joint:
+      trajectory: 1.0               # Not enforced if unspecified
+      goal: 0.5                     # Not enforced if unspecified
+    forearm_0_1_joint:
+      trajectory: 1.0               # Not enforced if unspecified
+      goal: 0.5                     # Not enforced if unspecified
+    forearm_arm_joint:
+      trajectory: 1.0               # Not enforced if unspecified
+      goal: 0.5                     # Not enforced if unspecified
+    arm_0_1_joint:
+      trajectory: 1.0               # Not enforced if unspecified
+      goal: 0.5                     # Not enforced if unspecified
+    arm_gripper_joint:
+      trajectory: 1.0               # Not enforced if unspecified
+      goal: 0.5                     # Not enforced if unspecified
 
   gains:
     base_forearm_joint: {p: 10, i: 1, d: 0.001}
     forearm_0_1_joint: {p: 10,  i: 1, d: 0.1}
     forearm_arm_joint: {p: 10, i: 1, d: 0.001}
     arm_0_1_joint: {p: 10,  i: 1, d: 0.001}
+    arm_gripper_joint: {p: 10,  i: 1, d: 0.001}

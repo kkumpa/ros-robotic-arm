@@ -25,30 +25,35 @@
         <joint name="base_forearm_joint" value="0" />
         <joint name="forearm_0_1_joint" value="0" />
         <joint name="forearm_arm_joint" value="0" />
+        <joint name="arm_gripper_joint" value="0" />
     </group_state>
     <group_state name="pose_1" group="arm">
         <joint name="arm_0_1_joint" value="-0.7516" />
         <joint name="base_forearm_joint" value="0" />
         <joint name="forearm_0_1_joint" value="0.2967" />
         <joint name="forearm_arm_joint" value="0" />
+        <joint name="arm_gripper_joint" value="0" />
     </group_state>
     <group_state name="pose_2" group="arm">
         <joint name="arm_0_1_joint" value="-1.3648" />
         <joint name="base_forearm_joint" value="0" />
         <joint name="forearm_0_1_joint" value="0.6527" />
         <joint name="forearm_arm_joint" value="0" />
+        <joint name="arm_gripper_joint" value="0" />
     </group_state>
     <group_state name="pose_3" group="arm">
         <joint name="arm_0_1_joint" value="-1.3648" />
         <joint name="base_forearm_joint" value="1" />
         <joint name="forearm_0_1_joint" value="0.6527" />
         <joint name="forearm_arm_joint" value="1" />
+        <joint name="arm_gripper_joint" value="0" />
     </group_state>
     <group_state name="pose_4" group="arm">
         <joint name="arm_0_1_joint" value="-1.3648" />
         <joint name="base_forearm_joint" value="2" />
         <joint name="forearm_0_1_joint" value="0.5341" />
         <joint name="forearm_arm_joint" value="2" />
+        <joint name="arm_gripper_joint" value="0" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper_link" parent_link="gripper_link" group="arm" />
